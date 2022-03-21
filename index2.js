@@ -45,7 +45,7 @@ function contact(event){
     .catch(() => {
         loading.classList.remove("modal__overlay--visible");
         alert(
-            "omo nawa o"
+            "Service is currently unavailable"
         )
     });
 
