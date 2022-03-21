@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjola Lasekan</title>
+    <link rel="shortcut icon" type="image/png" href="assets/assets/technology.png">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="index2.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("oF4_sJqWlRQKkz_Xe");
+    })();
+</script>
+</head>
+<body>
+    <section id="landing" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <img src="assets/assets/loppe.svg" alt="" class="nav__logo">
+            </figure>
+            <ul class="nav__links">
+                <li  class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="nav__link--anchor
+                    nav__link--hover
+                    nav__link--hover--black">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="nav__link--anchor
+                    nav__link--hover
+                    nav__link--hover--black">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="nav__link--anchor
+                    nav__link--hover
+                    nav__link--hover--black" >Contact</a>
+                </li>
+                <li class="nav__link" onclick="toggleBackground()">
+                    <a href="#" class="nav__link--anchor
+                    nav__link--hover
+                    nav__link--hover--black"><i class="fa fa-adjust"></i></a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header class="header">
+            
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title purple">I'm Anjola.</h1>
+                <p class="header__para">I'm a <b class="purple">Frontend Software Engineer</b> with a strong passion for building web applications great user experiences.
+                    <br>
+                    Here's a bit more <b class="purple click" onclick="toggleModal()">about me</b>
+                </p>
+                <div class="icons">
+                    <a href="https://github.com/Anjolash" target="_blank" class="profile__links">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="assets/assets/ANJOLAOLUWALASEKANRESUME.pdf" target="_blank" class="profile__links">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226" target="_blank"  class="profile__links">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div> 
+
+            </div>
+                
+        </header>
+        <a href="" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a> 
+
+        <a href="#">
+            <button class="mail__button click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a> 
+
+        <div class="modal">
+            <div class="modal__half modal__contact">
+                <h3 class="modal--header">Let's have a chat</h3>
+                <h4 class="modal__sub-header">I'm currently open to new opportunities</h4>
+
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label  class="form__item--label">Name</label>
+                        <input type="text" class="input" name="user_name" required></input>
+                    </div>
+
+                    <div class="form__item">
+                        <label for="" class="form__item--label">Email</label>
+                        <input type="email" class="input" name="user_email" required></input>
+                    </div>
+
+                    <div class="form__item">
+                        <label for="" class="form__item--label">Message</label>
+                        <textarea type="text" class="input textarea" name="user_message"></textarea>
+                    </div>
+
+                    <button class="contact__button click">Send It My Way</button>
+
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+    
+                <div class="modal__overlay modal__overlay--success">
+                    T for tenks
+                </div>
+
+                
+            </div>
+            <div class="modal__half modal__about">
+                <h3 class="modal--header">Here's a bit about me.</h3>
+                <h4 class="modal__sub-header">Frontend Software Engineer.</h4>
+                <p class="modal__para">I'm a  19 year old Nigerian<b class="purple"> frontend software engineer</b> with a strong passion for building performant web applications with great user experiences.
+
+                    <br>                    
+                    I am currently freelance frontend developer and a computer engineering student at the National Technical University of Ukraine 'Kyiv Polytechnic Institute'​. 
+                    I am open to Internship roles or full time developer roles</p>
+                    <div class="languages">
+                        <div class="language click">
+                            <img src="assets/assets/HTML52.png" alt="" class="language__img click">
+                            <span class="language__name">HTML</span>
+                        </div>
+
+                        <div class="language click">
+                            <img src="assets/assets/CSS3logo.png" alt="" class="language__img">
+                            <span class="language__name">CSS</span>
+                        </div>
+
+
+                        <div class="language click">
+                            <img src="assets/assets/javascriptlogo.png" alt="" class="language__img">
+                            <span class="language__name">JavaScript</span>
+                        </div>
+
+                        <div class="language click">
+                            <img src="assets/assets/REACT2.png" alt="" class="language__img">
+                            <span class="language__name">REACT</span>
+                        </div>
+
+
+                        
+                    </div>    
+
+            </div>
+            <button class="close__button click" onclick="toggleModal()">
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+
+        <img src="assets/assets/semi circle.svg" alt="" class="shape shape--0">
+        <img src="assets/assets/circle.svg" alt="" class="shape shape--1">
+        <img src="assets/assets/squiggly.svg" alt="" class="shape shape--2">
+        <img src="assets/assets/semi circle.svg" alt="" class="shape shape--3">
+        <img src="assets/assets/circle.svg" alt="" class="shape shape--4">
+        <img src="assets/assets/triangle.svg" alt="" class="shape shape--5">   
+        <img src="assets/assets/squiggly.svg" alt="" class="shape shape--6">
+        <img src="assets/assets/triangle.svg" alt="" class="shape shape--7">
+        <img src="assets/assets/semi circle.svg" alt="" class="shape shape--8">
+    </section>
+
+
+
+    <section id="projects" onmousemove="moveBackground(event)">
+        <div class="container">
+            <div class="row">
+                <h2 class="section__title">Here are some of my <span class="purple">projects.</span></h2>
+                <div class="projects">
+                   
+
+
+                    <div class="project">
+                        <figure>
+                            <img src="assets/project1.png" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Weather App project</h2>
+                                <h3 class="project__subtitle">HTML,CSS,JavaScript</h3>
+                                <p class="project__description--para">Using HTML, CSS, and JavaScript I created a fully functional, 
+                                    fully responsive weather app with a dynamically modified background image using the Openweathermap API .
+                                </p>
+                                <div class="project__links">
+                                    <a href="https://github.com/Anjolash/TheWeather" target="_blank" class="project__link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                
+                                    <a href="https://anjolash.github.io/TheWeather/" target="_blank" class="project__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>   
+
+                        
+                    </div>
+
+
+                    <div class="project">
+                        <figure>
+                            <img src="assets/LIBRARY.png" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Library app</h2>
+                                <h3 class="project__subtitle">HTML,CSS</h3>
+                                <p class="project__description--para">Landing page of an online book store.
+                                </p>
+                                <div class="project__links">
+                                    <a href="https://github.com/Anjolash/Library" target="_blank" class="project__link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                
+                                    <a href="https://anjolash.github.io/Library/" target="_blank" class="project__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>   
+
+                        
+                    </div>
+
+
+                    <div class="project">
+                        <figure>
+                            <img src="assets/loopit.png" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Car Sales Project</h2>
+                                <h3 class="project__subtitle">HTML,CSS,JavaScript,vue,vuex</h3>
+                                <p class="project__description--para">In Progress
+                                </p>
+                                <div class="project__links">
+                                    
+
+                                </div>
+
+                            </div>
+                        </div>    
+
+                    
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer__container">
+            <div class="footer__row">
+                <figure>
+                    <img src="assets/assets/loppe.svg" alt="" class="nav__logo footer__logo">
+                </figure>
+                <ul class="footer__nav">
+                    <li class="footer__nav--item">
+                        <a href="https://github.com/Anjolash" target="_blank" class="footer__link 
+                        nav__link--hover
+                        nav__link--hover--white">Github</a>
+                    </li>
+
+                    <li class="footer__nav--item">
+                        <a href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226" target="_blank"  class="footer__link 
+                        nav__link--hover
+                        nav__link--hover--white">LinkedIn</a>
+                    </li>
+
+                    <li class="footer__nav--item">
+                        <a href="assets/assets/ANJOLAOLUWALASEKANRESUME.pdf" target="_blank"  class="footer__link 
+                        nav__link--hover
+                        nav__link--hover--white">Resume</a>
+                    </li>
+
+                    <li class="footer__nav--item" onclick="toggleModal()">
+                        <a href="#" class="footer__link 
+                        nav__link--hover
+                        nav__link--hover--white">Contact</a>
+                    </li>
+                </ul>
+                <div class="footer__copyright">
+                    copyright &copy; Anjolash 2022
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
