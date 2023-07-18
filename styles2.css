@@ -595,6 +595,7 @@ projects
     width: 100%;
     max-width: 400px;
     margin-bottom: 16px;
+    font-size: 12px;
 }
 
 .project__link{
