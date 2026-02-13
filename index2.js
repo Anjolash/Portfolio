@@ -60,6 +60,7 @@ function moveBackground(event){
 
 function toggleProjects(){
     const hiddenProjects = document.querySelectorAll('.project--hidden');
+    const unhiddenProjects = document.querySelectorAll('.project--visible');
     const showMoreBtn = document.querySelector('.show-more-btn');
     const showMoreText = document.querySelector('.show-more-text');
     
@@ -78,7 +79,7 @@ function toggleProjects(){
         projectsExpanded = true;
     } else {
         // Hide projects
-        hiddenProjects.forEach((project) => {
+        unhiddenProjects.forEach((project) => {
             project.classList.remove('project--visible');
             project.classList.add('project--hidden');
         });
