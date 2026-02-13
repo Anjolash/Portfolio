@@ -52,7 +52,7 @@
             <div class="header__content">
                 <h1 class="title">Hey</h1>
                 <h1 class="title purple">I'm Anjola.</h1>
-                <p class="header__para">I'm a <b class="purple">Frontend Software Engineer</b> with a strong passion for building web applications great user experiences.
+                <p class="header__para">I'm a <b class="purple">Software Engineer</b> with a strong passion for building web applications great user experiences.
                     <br>
                     Here's a bit more <b class="purple click" onclick="toggleModal()">about me</b>
                 </p>
@@ -67,6 +67,9 @@
 
                     <a href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226" target="_blank"  class="profile__links">
                         <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:anjolaoluwa.dev@gmail.com" target="_blank"  class="profile__links">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div> 
 
@@ -119,12 +122,13 @@
             </div>
             <div class="modal__half modal__about">
                 <h3 class="modal--header">Here's a bit about me.</h3>
-                <h4 class="modal__sub-header">Frontend Software Engineer.</h4>
-                <p class="modal__para">I'm a  20 year old <b class="purple"> frontend software engineer</b> with a strong passion for building performant web applications with great user experiences.
+                <h4 class="modal__sub-header">Software Engineer.</h4>
+                <p class="modal__para">I'm a  23 year old <b class="purple"> Software engineer</b> with a strong passion for building performant web applications with great user experiences.
 
                     <br>                    
-                    I am currently freelance frontend developer and a computer engineering student at the National Technical University of Ukraine 'Kyiv Polytechnic Institute'​. 
-                    I am open to Internship roles or full time developer roles</p>
+                    I am a Master's student in Applied Computer Science at Concordia University and a Teaching Assistant specializing in Java programming and OOP principles. With experience as a Data Intern building Python ETL pipelines and Power BI dashboards, and a Frontend Developer Intern creating full-stack web applications, I bring expertise in both data engineering and web development.
+                    I am currently seeking full-time software developer roles.
+                    </p>
                     <div class="languages">
                         <div class="language click">
                             <img src="assets/assets/HTML52.png" alt="" class="language__img click">
@@ -176,7 +180,105 @@
             <div class="row">
                 <h2 class="section__title">Here are some of my <span class="purple">projects.</span></h2>
                 <div class="projects">
+                    <!-- Main Projects (Always Visible) -->
+                    
+                    
+                    
+
+                    
+
+                    <!-- Additional Projects (Hidden by default) -->
+
+                    
+
                     <div class="project">
+                        <figure>
+                            <img src="assets/FaceRecProj.png" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Face Recognition System with ArcFace</h2>
+                                <h3 class="project__subtitle">Python, Flask, InsightFace, OpenCV, Docker</h3>                   
+                                <p class="project__description--para">
+                                    An evolution from CNN to ArcFace: Built production-ready face recognition web app with 99%+ accuracy, supporting 100+ concurrent users. Features smart auto-capture system, zero-retraining architecture enabling instant person addition (2 seconds vs 2 hours), and multi-face detection. Deployed on Hugging Face Spaces with Docker containerization.
+                                </p>
+                                <div class="project__links">
+                                    <a href="https://github.com/Anjolash/Face-Recognition-OpenCV" target="_blank" class="project__link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://huggingface.co/spaces/DevJola/face-recognition" target="_blank" class="project__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="project">
+                        <figure>
+                            <img src="assets/ProjectRisk.jpg" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Risk Game Simulation</h2>
+                                <h3 class="project__subtitle">Java, JUnit, OOP, Design Patterns</h3>
+                                <p class="project__description--para">
+                                    A Java-based strategy game featuring connected graph of territories and real-time strategic gameplay. Implemented using MVC architecture and Command pattern, with comprehensive JUnit test suite achieving 85% code coverage. Developed collaboratively with a team of 5 using Git and Agile practices.
+                                </p>
+                                <div class="project__links">
+                                    <a href="https://github.com/Anjolash/warzone/tree/dev" target="_blank" class="project__link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="project">
+                        <figure>
+                            <img src="assets/BankDashBoard.png" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Bank Transaction Dashboard</h2>
+                                <h3 class="project__subtitle">Flask, Vue.js, Firebase, Python</h3>
+                                <p class="project__description--para">
+                                    A full-stack web application showcasing user transactions through dynamic RESTful API calls. Features JWT authentication, role-based access control, and optimized API response times under 200ms. Deployed with CI/CD pipeline using GitHub Actions and automated testing.
+                                </p>
+                                <div class="project__links">
+                                    <a href="https://github.com/Anjolash/BankTransactions" target="_blank" class="project__link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://anjolash.github.io/BankTransactions/" target="_blank" class="project__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="project project--hidden">
+                        <figure>
+                            <img src="assets/loopit2.png" alt="" class="project__img">
+                        </figure>
+                        <div class="project__description--background">
+                            <div class="project__description">
+                                <h2 class="project__title">Car Sales Project</h2>
+                                <h3 class="project__subtitle">HTML,CSS,JavaScript,vue,vuex,REACT</h3>
+                                <p class="project__description--para">Car Sales App: A dynamic React-based website that enables users to explore and purchase vehicles from a diverse inventory. 
+                                    The app features seamless user authentication through Firebase and allows users to manage their shopping carts efficiently. 
+                                    Explore detailed vehicle information and experience a smooth shopping experience with this interactive car sales app.
+                                </p>
+                                <div class="project__links">
+                                    <a href="https://github.com/Anjolash/TopGear" target="_blank" class="project__link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://tourmaline-clafoutis-73e18a.netlify.app/" target="_blank" class="project__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="project project--hidden">
                         <figure>
                             <img src="assets/project1.png" alt="" class="project__img">
                         </figure>
@@ -200,7 +302,7 @@
                             </div>
                         </div>   
                     </div>
-                    <div class="project">
+                    <div class="project project--hidden">
                         <figure>
                             <img src="assets/library2.png" alt="" class="project__img">
                         </figure>
@@ -224,32 +326,12 @@
                         
                     </div>
 
-
-                    <div class="project">
-                        <figure>
-                            <img src="assets/loopit2.png" alt="" class="project__img">
-                        </figure>
-                        <div class="project__description--background">
-                            <div class="project__description">
-                                <h2 class="project__title">Car Sales Project</h2>
-                                <h3 class="project__subtitle">HTML,CSS,JavaScript,vue,vuex,REACT</h3>
-                                <p class="project__description--para">Car Sales App: A dynamic React-based website that enables users to explore and purchase vehicles from a diverse inventory. 
-                                    The app features seamless user authentication through Firebase and allows users to manage their shopping carts efficiently. 
-                                    Explore detailed vehicle information and experience a smooth shopping experience with this interactive car sales app.
-                                </p>
-                                <div class="project__links">
-                                    <div class="project__links">
-                                    <a href="https://github.com/Anjolash/TopGear" target="_blank" class="project__link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://tourmaline-clafoutis-73e18a.netlify.app/" target="_blank" class="project__link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                </div>
-                            </div>
-                        </div>    
-                </div>
+                <!-- Show More Button -->
+                <div class="show-more-wrapper">
+                    <button class="show-more-btn click" onclick="toggleProjects()">
+                        <span class="show-more-text">Show More Projects</span>
+                        <i class="fas fa-chevron-down show-more-icon"></i>
+                    </button>
                 </div>
             </div>
 
@@ -288,7 +370,7 @@
                     </li>
                 </ul>
                 <div class="footer__copyright">
-                    copyright &copy; Anjolash 2022
+                    copyright &copy; Anjolash 2026
                 </div>
             </div>
         </div>
