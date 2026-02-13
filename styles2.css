@@ -399,6 +399,7 @@ nav,
 .modal__para{
     margin-top: 24px;
     line-height: 2;
+    font-size: 12px;
 }
 
 
@@ -531,8 +532,31 @@ projects
     overflow: hidden;
     margin-bottom: 60px;
     color: ghostwhite;
-    
-   
+    transition: all 500ms ease;
+}
+
+/* Hidden projects - initially not displayed */
+.project--hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* When projects are shown */
+.project--visible {
+    display: block;
+    animation: fadeInProject 600ms ease forwards;
+}
+
+@keyframes fadeInProject {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .project__img{
@@ -605,6 +629,43 @@ projects
     color: ghostwhite;
     
     
+}
+
+/* Show More Button */
+.show-more-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.show-more-btn {
+    background-color: #a10aa1;
+    color: ghostwhite;
+    border: none;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 300ms ease;
+    box-shadow: 0 4px 15px rgba(161, 10, 161, 0.3);
+}
+
+.show-more-btn:hover {
+    background-color: #8a0a8a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(161, 10, 161, 0.4);
+}
+
+.show-more-icon {
+    transition: transform 300ms ease;
+}
+
+.show-more-btn.rotated .show-more-icon {
+    transform: rotate(180deg);
 }
 
 /*footer*/
@@ -783,5 +844,9 @@ RESPONSIVE
     .modal__half {
         padding: 40px;
     }
-}
 
+    .show-more-btn {
+        padding: 14px 32px;
+        font-size: 16px;
+    }
+}
