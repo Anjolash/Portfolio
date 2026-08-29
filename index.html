@@ -1,379 +1,1153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjola Lasekan</title>
+
+    <title>Anjola Lasekan | Software Engineer</title>
+
     <link rel="shortcut icon" type="image/png" href="assets/assets/technology.png">
-    <script src="https://kit.fontawesome.com/4a7142628e.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script
+        src="https://kit.fontawesome.com/4a7142628e.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles2.css">
-    <script src="index2.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="index2.js" defer></script>
+
+    <!-- EmailJS -->
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
     <script type="text/javascript">
-    (function() {
-    emailjs.init("oF4_sJqWlRQKkz_Xe");
-    })();
-</script>
+        (function () {
+            emailjs.init("oF4_sJqWlRQKkz_Xe");
+        })();
+    </script>
 </head>
+
 <body>
+
+    <!-- =====================================================
+         LANDING / HERO
+    ====================================================== -->
+
     <section id="landing" onmousemove="moveBackground(event)">
+
+        <!-- Navigation -->
         <nav>
+
             <figure>
-                <img src="assets/assets/loppe.svg" alt="" class="nav__logo">
+                <img
+                    src="assets/assets/loppe.svg"
+                    alt="Anjola Lasekan logo"
+                    class="nav__logo">
             </figure>
+
             <ul class="nav__links">
-                <li  class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="nav__link--anchor
-                    nav__link--hover
-                    nav__link--hover--black">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#projects" class="nav__link--anchor
-                    nav__link--hover
-                    nav__link--hover--black">Projects</a>
-                </li>
+
                 <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="nav__link--anchor
-                    nav__link--hover
-                    nav__link--hover--black" >Contact</a>
+                    <a
+                        href="#"
+                        class="nav__link--anchor nav__link--hover nav__link--hover--black">
+                        About
+                    </a>
                 </li>
+
+                <li class="nav__link">
+                    <a
+                        href="#projects"
+                        class="nav__link--anchor nav__link--hover nav__link--hover--black">
+                        Projects
+                    </a>
+                </li>
+
+                <li class="nav__link" onclick="toggleModal()">
+                    <a
+                        href="#"
+                        class="nav__link--anchor nav__link--hover nav__link--hover--black">
+                        Contact
+                    </a>
+                </li>
+
                 <li class="nav__link" onclick="toggleBackground()">
-                    <a href="#" class="nav__link--anchor
-                    nav__link--hover
-                    nav__link--hover--black"><i class="fa fa-adjust"></i></a>
+                    <a
+                        href="#"
+                        class="nav__link--anchor nav__link--hover nav__link--hover--black"
+                        aria-label="Toggle theme">
+                        <i class="fa fa-adjust"></i>
+                    </a>
                 </li>
-                
+
             </ul>
+
         </nav>
 
+
+        <!-- Hero Content -->
         <header class="header">
-            
+
             <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title purple">I'm Anjola.</h1>
-                <p class="header__para">I'm a <b class="purple">Software Engineer</b> with a strong passion for building web applications great user experiences.
+
+                <h1 class="title">
+                    Hey
+                </h1>
+
+                <h1 class="title purple">
+                    I'm Anjola.
+                </h1>
+
+                <p class="header__para">
+                    I'm a
+                    <b class="purple">Software Engineer</b>
+                    with a strong passion for building web applications
+                    with great user experiences.
+
                     <br>
-                    Here's a bit more <b class="purple click" onclick="toggleModal()">about me</b>
+
+                    Here's a bit more
+                    <b
+                        class="purple click"
+                        onclick="toggleModal()">
+                        about me
+                    </b>
                 </p>
+
+
+                <!-- Social Links -->
                 <div class="icons">
-                    <a href="https://github.com/Anjolash" target="_blank" class="profile__links">
+
+                    <a
+                        href="https://github.com/Anjolash"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="profile__links"
+                        aria-label="GitHub">
+
                         <i class="fab fa-github"></i>
+
                     </a>
 
-                    <a href="assets/assets/ANJOLAOLUWALASEKANRESUME.pdf" target="_blank" class="profile__links">
+
+                    <a
+                        href="assets/assets/ANJOLAOLUWALASEKANRESUME.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="profile__links"
+                        aria-label="Resume">
+
                         <i class="fas fa-file-pdf"></i>
+
                     </a>
 
-                    <a href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226" target="_blank"  class="profile__links">
+
+                    <a
+                        href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="profile__links"
+                        aria-label="LinkedIn">
+
                         <i class="fab fa-linkedin-in"></i>
+
                     </a>
-                    <a href="mailto:anjolaoluwa.dev@gmail.com" target="_blank"  class="profile__links">
+
+
+                    <a
+                        href="mailto:anjolaoluwa.dev@gmail.com"
+                        class="profile__links"
+                        aria-label="Email">
+
                         <i class="fas fa-envelope"></i>
+
                     </a>
-                </div> 
+
+                </div>
 
             </div>
-                
+
         </header>
-        <a href="" class="scroll">
-            <div class="scroll__icon click"></div>
-        </a> 
 
-        <a href="#">
-            <button class="mail__button click" onclick="toggleModal()">
-                <i class="fas fa-envelope"></i>
-            </button>
-        </a> 
 
-        <div class="modal">
+        <!-- Scroll Indicator -->
+        <a
+            href="#projects"
+            class="scroll"
+            aria-label="Scroll to projects">
+
+            <div class="scroll__icon"></div>
+
+        </a>
+
+
+        <!-- Floating Contact Button -->
+        <button
+            type="button"
+            class="mail__button click"
+            onclick="toggleModal()"
+            aria-label="Open contact form">
+
+            <i class="fas fa-envelope"></i>
+
+        </button>
+
+
+        <!-- =================================================
+             CONTACT / ABOUT MODAL
+        ================================================== -->
+
+        <div class="modal" role="dialog" aria-modal="true">
+
+            <!-- Contact Side -->
             <div class="modal__half modal__contact">
-                <h3 class="modal--header">Let's have a chat</h3>
-                <h4 class="modal__sub-header">I'm currently open to new opportunities</h4>
 
-                <form id="contact__form" onsubmit="contact(event)">
+                <h3 class="modal--header">
+                    Let's have a chat
+                </h3>
+
+                <h4 class="modal__sub-header">
+                    I'm currently open to new opportunities
+                </h4>
+
+
+                <!-- Contact Form -->
+                <form
+                    id="contact__form"
+                    onsubmit="contact(event)">
+
                     <div class="form__item">
-                        <label  class="form__item--label">Name</label>
-                        <input type="text" class="input" name="user_name" required></input>
+
+                        <label
+                            for="user_name"
+                            class="form__item--label">
+                            Name
+                        </label>
+
+                        <input
+                            id="user_name"
+                            type="text"
+                            class="input"
+                            name="user_name"
+                            placeholder="Your name"
+                            autocomplete="name"
+                            required>
+
                     </div>
 
-                    <div class="form__item">
-                        <label for="" class="form__item--label">Email</label>
-                        <input type="email" class="input" name="user_email" required></input>
-                    </div>
 
                     <div class="form__item">
-                        <label for="" class="form__item--label">Message</label>
-                        <textarea type="text" class="input textarea" name="message"></textarea>
+
+                        <label
+                            for="user_email"
+                            class="form__item--label">
+                            Email
+                        </label>
+
+                        <input
+                            id="user_email"
+                            type="email"
+                            class="input"
+                            name="user_email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required>
+
                     </div>
 
-                    <button class="contact__button click">Send It My Way</button>
+
+                    <div class="form__item">
+
+                        <label
+                            for="message"
+                            class="form__item--label">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            class="input textarea"
+                            name="message"
+                            placeholder="Tell me a little about what you'd like to discuss..."
+                            rows="4"></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="contact__button click">
+
+                        Send It My Way
+
+                    </button>
 
                 </form>
+
+
+                <!-- Loading Overlay -->
                 <div class="modal__overlay modal__overlay--loading">
+
                     <i class="fas fa-spinner"></i>
+
                 </div>
-    
+
+
+                <!-- Success Overlay -->
                 <div class="modal__overlay modal__overlay--success">
+
                     Thank you
+
                 </div>
 
-                
             </div>
+
+
+            <!-- About Side -->
             <div class="modal__half modal__about">
-                <h3 class="modal--header">Here's a bit about me.</h3>
-                <h4 class="modal__sub-header">Software Engineer.</h4>
-                <p class="modal__para">I'm a  23 year old <b class="purple"> Software engineer</b> with a strong passion for building performant web applications with great user experiences.
 
-                    <br>                    
-                    I am a Master's student in Applied Computer Science at Concordia University and a Teaching Assistant specializing in Java programming and OOP principles. With experience as a Data Intern building Python ETL pipelines and Power BI dashboards, and a Frontend Developer Intern creating full-stack web applications, I bring expertise in both data engineering and web development.
+                <h3 class="modal--header">
+                    Here's a bit about me.
+                </h3>
+
+                <h4 class="modal__sub-header">
+                    Software Engineer.
+                </h4>
+
+
+                <p class="modal__para">
+
+                    I'm a 23 year old
+                    <b class="purple">Software Engineer</b>
+                    with a strong passion for building performant web
+                    applications with great user experiences.
+
+                    <br><br>
+
+                    I am a Master's student in Applied Computer Science
+                    at Concordia University and a Teaching Assistant
+                    specializing in Java programming and OOP principles.
+
+                    With experience as a Data Intern building Python ETL
+                    pipelines and Power BI dashboards, and a Frontend
+                    Developer Intern creating full-stack web applications,
+                    I bring expertise in both data engineering and web
+                    development.
+
+                    <br><br>
+
                     I am currently seeking full-time software developer roles.
-                    </p>
-                    <div class="languages">
-                        <div class="language click">
-                            <img src="assets/assets/HTML52.png" alt="" class="language__img click">
-                            <span class="language__name">HTML</span>
-                        </div>
 
-                        <div class="language click">
-                            <img src="assets/assets/CSS3logo.png" alt="" class="language__img">
-                            <span class="language__name">CSS</span>
-                        </div>
+                </p>
 
 
-                        <div class="language click">
-                            <img src="assets/assets/javascriptlogo.png" alt="" class="language__img">
-                            <span class="language__name">JavaScript</span>
-                        </div>
+                <!-- Technologies -->
+                <div class="languages">
 
-                        <div class="language click">
-                            <img src="assets/assets/REACT2.png" alt="" class="language__img">
-                            <span class="language__name">REACT</span>
-                        </div>
+                    <div class="language click">
+
+                        <img
+                            src="assets/assets/HTML52.png"
+                            alt="HTML"
+                            class="language__img">
+
+                        <span class="language__name">
+                            HTML
+                        </span>
+
+                    </div>
 
 
-                        
-                    </div>    
+                    <div class="language click">
+
+                        <img
+                            src="assets/assets/CSS3logo.png"
+                            alt="CSS"
+                            class="language__img">
+
+                        <span class="language__name">
+                            CSS
+                        </span>
+
+                    </div>
+
+
+                    <div class="language click">
+
+                        <img
+                            src="assets/assets/javascriptlogo.png"
+                            alt="JavaScript"
+                            class="language__img">
+
+                        <span class="language__name">
+                            JavaScript
+                        </span>
+
+                    </div>
+
+
+                    <div class="language click">
+
+                        <img
+                            src="assets/assets/REACT2.png"
+                            alt="React"
+                            class="language__img">
+
+                        <span class="language__name">
+                            React
+                        </span>
+
+                    </div>
+
+                </div>
 
             </div>
-            <button class="close__button click" onclick="toggleModal()">
+
+
+            <!-- Close Modal -->
+            <button
+                type="button"
+                class="close__button click"
+                onclick="toggleModal()"
+                aria-label="Close modal">
+
                 <i class="fas fa-times"></i>
+
             </button>
 
         </div>
 
-        <img src="assets/assets/semi circle.svg" alt="" class="shape shape--0">
-        <img src="assets/assets/circle.svg" alt="" class="shape shape--1">
-        <img src="assets/assets/squiggly.svg" alt="" class="shape shape--2">
-        <img src="assets/assets/semi circle.svg" alt="" class="shape shape--3">
-        <img src="assets/assets/circle.svg" alt="" class="shape shape--4">
-        <img src="assets/assets/triangle.svg" alt="" class="shape shape--5">   
-        <img src="assets/assets/squiggly.svg" alt="" class="shape shape--6">
-        <img src="assets/assets/triangle.svg" alt="" class="shape shape--7">
-        <img src="assets/assets/semi circle.svg" alt="" class="shape shape--8">
+
+        <!-- =================================================
+             DECORATIVE BACKGROUND SHAPES
+        ================================================== -->
+
+        <img
+            src="assets/assets/semi circle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--0">
+
+        <img
+            src="assets/assets/circle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--1">
+
+        <img
+            src="assets/assets/squiggly.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--2">
+
+        <img
+            src="assets/assets/semi circle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--3">
+
+        <img
+            src="assets/assets/circle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--4">
+
+        <img
+            src="assets/assets/triangle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--5">
+
+        <img
+            src="assets/assets/squiggly.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--6">
+
+        <img
+            src="assets/assets/triangle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--7">
+
+        <img
+            src="assets/assets/semi circle.svg"
+            alt=""
+            aria-hidden="true"
+            class="shape shape--8">
+
     </section>
 
 
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
 
-    <section id="projects" onmousemove="moveBackground(event)">
+    <section
+        id="projects"
+        onmousemove="moveBackground(event)">
+
         <div class="container">
+
             <div class="row">
-                <h2 class="section__title">Here are some of my <span class="purple">projects.</span></h2>
+
+                <h2 class="section__title">
+                    Here are some of my
+                    <span class="purple">
+                        projects.
+                    </span>
+                </h2>
+
+
                 <div class="projects">
-                    <!-- Main Projects (Always Visible) -->
-                    
-                    
-                    
+
 
                     
-
-                    <!-- Additional Projects (Hidden by default) -->
-
-                    
+                    <!-- =====================================
+                        PROJECT 0 (NEWEST)
+                    ====================================== -->
 
                     <div class="project">
+
                         <figure>
-                            <img src="assets/FaceRecProj.png" alt="" class="project__img">
+                            <img
+                                src="assets/JobTrackr.png"
+                                alt="JobTrackr project"
+                                class="project__img">
                         </figure>
+
+
                         <div class="project__description--background">
+
                             <div class="project__description">
-                                <h2 class="project__title">Face Recognition System with ArcFace</h2>
-                                <h3 class="project__subtitle">Python, Flask, InsightFace, OpenCV, Docker</h3>                   
+
+                                <h2 class="project__title">
+                                    JobTrackr — Full-Stack Job Application Tracker
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    Java, Spring Boot, React, TypeScript, Azure, Chrome Extension
+                                </h3>
+
                                 <p class="project__description--para">
-                                    An evolution from CNN to ArcFace: Built production-ready face recognition web app with 99%+ accuracy, supporting 100+ concurrent users. Features smart auto-capture system, zero-retraining architecture enabling instant person addition (2 seconds vs 2 hours), and multi-face detection. Deployed on Hugging Face Spaces with Docker containerization.
+                                    A full-stack job application tracker built to replace
+                                    spreadsheet-tracking during my own job search. Includes
+                                    a drag-and-drop Kanban board, a Chrome extension that
+                                    saves postings from LinkedIn and Indeed in one click,
+                                    and an email intelligence feature that reads inbox
+                                    replies via Microsoft Graph API to auto-update
+                                    application statuses. Implements multi-provider OAuth
+                                    (Microsoft Entra ID and Google) with per-user data
+                                    isolation across the web app, browser extension, and
+                                    REST API. Deployed end-to-end on Azure (Static Web
+                                    Apps, App Service, Azure SQL, Blob Storage).
                                 </p>
+
+
                                 <div class="project__links">
-                                    <a href="https://github.com/Anjolash/Face-Recognition-OpenCV" target="_blank" class="project__link">
+
+                                    <a
+                                        href="https://github.com/Anjolash/jobtrackr-api"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View JobTrackr GitHub">
+
                                         <i class="fab fa-github"></i>
+
                                     </a>
-                                    <a href="https://huggingface.co/spaces/DevJola/face-recognition" target="_blank" class="project__link">
+
+                                    <a
+                                        href="https://jolly-hill-0b7541e0f.7.azurestaticapps.net/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View JobTrackr demo">
+
                                         <i class="fas fa-link"></i>
+
                                     </a>
+
                                 </div>
+
                             </div>
-                        </div>    
+
+                        </div>
+
                     </div>
+                    <!-- =====================================
+                         PROJECT 1
+                    ====================================== -->
                     <div class="project">
+
                         <figure>
-                            <img src="assets/ProjectRisk.jpg" alt="" class="project__img">
+                            <img
+                                src="assets/FaceRecProj.png"
+                                alt="Face Recognition System project"
+                                class="project__img">
                         </figure>
+
+
                         <div class="project__description--background">
+
                             <div class="project__description">
-                                <h2 class="project__title">Risk Game Simulation</h2>
-                                <h3 class="project__subtitle">Java, JUnit, OOP, Design Patterns</h3>
+
+                                <h2 class="project__title">
+                                    Face Recognition System with ArcFace
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    Python, Flask, InsightFace, OpenCV, Docker
+                                </h3>
+
                                 <p class="project__description--para">
-                                    A Java-based strategy game featuring connected graph of territories and real-time strategic gameplay. Implemented using MVC architecture and Command pattern, with comprehensive JUnit test suite achieving 85% code coverage. Developed collaboratively with a team of 5 using Git and Agile practices.
+                                    An evolution from CNN to ArcFace:
+                                    Built production-ready face recognition
+                                    web app with 99%+ accuracy, supporting
+                                    100+ concurrent users. Features smart
+                                    auto-capture system, zero-retraining
+                                    architecture enabling instant person
+                                    addition (2 seconds vs 2 hours), and
+                                    multi-face detection. Deployed on
+                                    Hugging Face Spaces with Docker
+                                    containerization.
                                 </p>
+
+
                                 <div class="project__links">
-                                    <a href="https://github.com/Anjolash/warzone/tree/dev" target="_blank" class="project__link">
+
+                                    <a
+                                        href="https://github.com/Anjolash/Face-Recognition-OpenCV"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Face Recognition GitHub">
+
                                         <i class="fab fa-github"></i>
+
                                     </a>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="project">
-                        <figure>
-                            <img src="assets/BankDashBoard.png" alt="" class="project__img">
-                        </figure>
-                        <div class="project__description--background">
-                            <div class="project__description">
-                                <h2 class="project__title">Bank Transaction Dashboard</h2>
-                                <h3 class="project__subtitle">Flask, Vue.js, Firebase, Python</h3>
-                                <p class="project__description--para">
-                                    A full-stack web application showcasing user transactions through dynamic RESTful API calls. Features JWT authentication, role-based access control, and optimized API response times under 200ms. Deployed with CI/CD pipeline using GitHub Actions and automated testing.
-                                </p>
-                                <div class="project__links">
-                                    <a href="https://github.com/Anjolash/BankTransactions" target="_blank" class="project__link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://anjolash.github.io/BankTransactions/" target="_blank" class="project__link">
+
+                                    <a
+                                        href="https://huggingface.co/spaces/DevJola/face-recognition"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Face Recognition demo">
+
                                         <i class="fas fa-link"></i>
+
                                     </a>
+
                                 </div>
+
                             </div>
-                        </div>    
+
+                        </div>
+
                     </div>
 
-                    <div class="project project--hidden">
+
+                    <!-- =====================================
+                         PROJECT 2
+                    ====================================== -->
+
+                    <div class="project">
+
                         <figure>
-                            <img src="assets/loopit2.png" alt="" class="project__img">
+                            <img
+                                src="assets/ProjectRisk.jpg"
+                                alt="Risk Game Simulation project"
+                                class="project__img">
                         </figure>
+
+
                         <div class="project__description--background">
+
                             <div class="project__description">
-                                <h2 class="project__title">Car Sales Project</h2>
-                                <h3 class="project__subtitle">HTML,CSS,JavaScript,vue,vuex,REACT</h3>
-                                <p class="project__description--para">Car Sales App: A dynamic React-based website that enables users to explore and purchase vehicles from a diverse inventory. 
-                                    The app features seamless user authentication through Firebase and allows users to manage their shopping carts efficiently. 
-                                    Explore detailed vehicle information and experience a smooth shopping experience with this interactive car sales app.
+
+                                <h2 class="project__title">
+                                    Risk Game Simulation
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    Java, JUnit, OOP, Design Patterns
+                                </h3>
+
+                                <p class="project__description--para">
+                                    A Java-based strategy game featuring
+                                    connected graph of territories and
+                                    real-time strategic gameplay.
+                                    Implemented using MVC architecture
+                                    and Command pattern, with comprehensive
+                                    JUnit test suite achieving 85% code
+                                    coverage. Developed collaboratively
+                                    with a team of 5 using Git and Agile
+                                    practices.
                                 </p>
+
+
                                 <div class="project__links">
-                                    <a href="https://github.com/Anjolash/TopGear" target="_blank" class="project__link">
+
+                                    <a
+                                        href="https://github.com/Anjolash/warzone/tree/dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Risk Game GitHub">
+
                                         <i class="fab fa-github"></i>
+
                                     </a>
-                                    <a href="https://tourmaline-clafoutis-73e18a.netlify.app/" target="_blank" class="project__link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
+
                                 </div>
+
                             </div>
-                        </div>    
-                    </div>
-                    <div class="project project--hidden">
-                        <figure>
-                            <img src="assets/project1.png" alt="" class="project__img">
-                        </figure>
-                        <div class="project__description--background">
-                            <div class="project__description">
-                                <h2 class="project__title">Weather App project</h2>
-                                <h3 class="project__subtitle">HTML,CSS,JavaScript</h3>
-                                <p class="project__description--para">Weather Map: This interactive weather map provides real-time weather updates for various cities worldwide. 
-                                    Built using JavaScript and the OpenWeatherMap API, users can search for specific cities to view their current weather conditions, including temperature, humidity, wind speed, and weather description.
-                                    The app dynamically changes the background image based on the searched city, creating an engaging and visually appealing experience.
-                                    Additionally, it showcases the weather of randomly selected cities every 30 seconds, offering a diverse perspective on global weather patterns.
-                                </p>
-                                <div class="project__links">
-                                    <a href="https://github.com/Anjolash/TheWeather" target="_blank" class="project__link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://anjolash.github.io/TheWeather/" target="_blank" class="project__link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="project project--hidden">
-                        <figure>
-                            <img src="assets/library2.png" alt="" class="project__img">
-                        </figure>
-                        <div class="project__description--background">
-                            <div class="project__description">
-                                <h2 class="project__title">Library app</h2>
-                                <h3 class="project__subtitle">HTML,CSS, JAVASCRIPT, REACT</h3>
-                                <p class="project__description--para">The Library App is a user-friendly platform that allows users to manage and organize their book collection. With a simple and intuitive interface, users can add new books, update book details, and mark books as read. 
-                                    It provides a convenient way to keep track of your reading progress and discover new books to explore.
-                                </p>
-                                <div class="project__links">
-                                    <a href="https://github.com/Anjolash/library-react" target="_blank" class="project__link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://glistening-taiyaki-156fc3.netlify.app" target="_blank" class="project__link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>   
-                        
+
+                        </div>
+
                     </div>
 
-                <!-- Show More Button -->
-                <div class="show-more-wrapper">
-                    <button class="show-more-btn click" onclick="toggleProjects()">
-                        <span class="show-more-text">Show More Projects</span>
-                        <i class="fas fa-chevron-down show-more-icon"></i>
-                    </button>
+
+                    <!-- =====================================
+                         PROJECT 3
+                    ====================================== -->
+
+                    <div class="project">
+
+                        <figure>
+                            <img
+                                src="assets/BankDashBoard.png"
+                                alt="Bank Transaction Dashboard project"
+                                class="project__img">
+                        </figure>
+
+
+                        <div class="project__description--background">
+
+                            <div class="project__description">
+
+                                <h2 class="project__title">
+                                    Bank Transaction Dashboard
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    Flask, Vue.js, Firebase, Python
+                                </h3>
+
+                                <p class="project__description--para">
+                                    A full-stack web application showcasing
+                                    user transactions through dynamic
+                                    RESTful API calls. Features JWT
+                                    authentication, role-based access
+                                    control, and optimized API response
+                                    times under 200ms. Deployed with CI/CD
+                                    pipeline using GitHub Actions and
+                                    automated testing.
+                                </p>
+
+
+                                <div class="project__links">
+
+                                    <a
+                                        href="https://github.com/Anjolash/BankTransactions"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Bank Dashboard GitHub">
+
+                                        <i class="fab fa-github"></i>
+
+                                    </a>
+
+                                    <a
+                                        href="https://anjolash.github.io/BankTransactions/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Bank Dashboard demo">
+
+                                        <i class="fas fa-link"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         PROJECT 4
+                         HIDDEN INITIALLY
+                    ====================================== -->
+
+                    <div class="project project--hidden">
+
+                        <figure>
+                            <img
+                                src="assets/loopit2.png"
+                                alt="Car Sales project"
+                                class="project__img">
+                        </figure>
+
+
+                        <div class="project__description--background">
+
+                            <div class="project__description">
+
+                                <h2 class="project__title">
+                                    Car Sales Project
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    HTML, CSS, JavaScript, Vue, Vuex, React
+                                </h3>
+
+                                <p class="project__description--para">
+                                    Car Sales App: A dynamic React-based
+                                    website that enables users to explore
+                                    and purchase vehicles from a diverse
+                                    inventory.
+
+                                    The app features seamless user
+                                    authentication through Firebase and
+                                    allows users to manage their shopping
+                                    carts efficiently.
+
+                                    Explore detailed vehicle information
+                                    and experience a smooth shopping
+                                    experience with this interactive
+                                    car sales app.
+                                </p>
+
+
+                                <div class="project__links">
+
+                                    <a
+                                        href="https://github.com/Anjolash/TopGear"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Car Sales GitHub">
+
+                                        <i class="fab fa-github"></i>
+
+                                    </a>
+
+                                    <a
+                                        href="https://tourmaline-clafoutis-73e18a.netlify.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Car Sales demo">
+
+                                        <i class="fas fa-link"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         PROJECT 5
+                         HIDDEN INITIALLY
+                    ====================================== -->
+
+                    <div class="project project--hidden">
+
+                        <figure>
+                            <img
+                                src="assets/project1.png"
+                                alt="Weather App project"
+                                class="project__img">
+                        </figure>
+
+
+                        <div class="project__description--background">
+
+                            <div class="project__description">
+
+                                <h2 class="project__title">
+                                    Weather App Project
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    HTML, CSS, JavaScript
+                                </h3>
+
+                                <p class="project__description--para">
+                                    Weather Map: This interactive weather
+                                    map provides real-time weather updates
+                                    for various cities worldwide.
+
+                                    Built using JavaScript and the
+                                    OpenWeatherMap API, users can search
+                                    for specific cities to view their
+                                    current weather conditions, including
+                                    temperature, humidity, wind speed,
+                                    and weather description.
+
+                                    The app dynamically changes the
+                                    background image based on the searched
+                                    city, creating an engaging and visually
+                                    appealing experience.
+
+                                    Additionally, it showcases the weather
+                                    of randomly selected cities every
+                                    30 seconds, offering a diverse
+                                    perspective on global weather patterns.
+                                </p>
+
+
+                                <div class="project__links">
+
+                                    <a
+                                        href="https://github.com/Anjolash/TheWeather"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Weather App GitHub">
+
+                                        <i class="fab fa-github"></i>
+
+                                    </a>
+
+                                    <a
+                                        href="https://anjolash.github.io/TheWeather/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Weather App demo">
+
+                                        <i class="fas fa-link"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         PROJECT 6
+                         HIDDEN INITIALLY
+                    ====================================== -->
+
+                    <div class="project project--hidden">
+
+                        <figure>
+                            <img
+                                src="assets/library2.png"
+                                alt="Library App project"
+                                class="project__img">
+                        </figure>
+
+
+                        <div class="project__description--background">
+
+                            <div class="project__description">
+
+                                <h2 class="project__title">
+                                    Library App
+                                </h2>
+
+                                <h3 class="project__subtitle">
+                                    HTML, CSS, JavaScript, React
+                                </h3>
+
+                                <p class="project__description--para">
+                                    The Library App is a user-friendly
+                                    platform that allows users to manage
+                                    and organize their book collection.
+
+                                    With a simple and intuitive interface,
+                                    users can add new books, update book
+                                    details, and mark books as read.
+
+                                    It provides a convenient way to keep
+                                    track of reading progress and discover
+                                    new books to explore.
+                                </p>
+
+
+                                <div class="project__links">
+
+                                    <a
+                                        href="https://github.com/Anjolash/library-react"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Library App GitHub">
+
+                                        <i class="fab fa-github"></i>
+
+                                    </a>
+
+                                    <a
+                                        href="https://glistening-taiyaki-156fc3.netlify.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project__link"
+                                        aria-label="View Library App demo">
+
+                                        <i class="fas fa-link"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         SHOW MORE
+                    ====================================== -->
+
+                    <div class="show-more-wrapper">
+
+                        <button
+                            type="button"
+                            class="show-more-btn click"
+                            onclick="toggleProjects()">
+
+                            <span class="show-more-text">
+                                Show More Projects
+                            </span>
+
+                            <i class="fas fa-chevron-down show-more-icon"></i>
+
+                        </button>
+
+                    </div>
+
                 </div>
+
             </div>
 
         </div>
+
     </section>
-    
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer>
+
         <div class="footer__container">
+
             <div class="footer__row">
+
                 <figure>
-                    <img src="assets/assets/loppe.svg" alt="" class="nav__logo footer__logo">
+                    <img
+                        src="assets/assets/loppe.svg"
+                        alt="Anjola Lasekan"
+                        class="nav__logo footer__logo">
                 </figure>
+
+
                 <ul class="footer__nav">
-                    <li class="footer__nav--item">
-                        <a href="https://github.com/Anjolash" target="_blank" class="footer__link 
-                        nav__link--hover
-                        nav__link--hover--white">Github</a>
-                    </li>
 
                     <li class="footer__nav--item">
-                        <a href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226" target="_blank"  class="footer__link 
-                        nav__link--hover
-                        nav__link--hover--white">LinkedIn</a>
+
+                        <a
+                            href="https://github.com/Anjolash"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer__link nav__link--hover nav__link--hover--white">
+
+                            Github
+
+                        </a>
+
                     </li>
+
 
                     <li class="footer__nav--item">
-                        <a href="assets/assets/ANJOLAOLUWALASEKANRESUME.pdf" target="_blank"  class="footer__link 
-                        nav__link--hover
-                        nav__link--hover--white">Resume</a>
+
+                        <a
+                            href="https://www.linkedin.com/in/anjolaoluwa-lasekan-1a7b09226"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer__link nav__link--hover nav__link--hover--white">
+
+                            LinkedIn
+
+                        </a>
+
                     </li>
 
-                    <li class="footer__nav--item" onclick="toggleModal()">
-                        <a href="#" class="footer__link 
-                        nav__link--hover
-                        nav__link--hover--white">Contact</a>
+
+                    <li class="footer__nav--item">
+
+                        <a
+                            href="assets/assets/ANJOLAOLUWALASEKANRESUME.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="footer__link nav__link--hover nav__link--hover--white">
+
+                            Resume
+
+                        </a>
+
                     </li>
+
+
+                    <li
+                        class="footer__nav--item"
+                        onclick="toggleModal()">
+
+                        <a
+                            href="#"
+                            class="footer__link nav__link--hover nav__link--hover--white">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
                 </ul>
+
+
                 <div class="footer__copyright">
-                    copyright &copy; Anjolash 2026
+
+                    Copyright &copy; Anjolash 2026
+
                 </div>
+
             </div>
+
         </div>
+
     </footer>
+
 </body>
+
 </html>
