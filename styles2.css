@@ -720,6 +720,7 @@ nav figure {
 .section__title {
     position: relative;
     z-index: 2;
+    text-align: center;
 
     margin-bottom: 65px;
 
@@ -803,6 +804,10 @@ nav figure {
     box-shadow:
         0 30px 80px rgba(0, 0, 0, 0.3),
         0 0 45px rgba(139, 92, 246, 0.10);
+}
+
+.project:hover figure {
+    filter: blur(1px);
 }
 
 .project figure {
