@@ -807,7 +807,7 @@ nav figure {
 }
 
 .project:hover figure {
-    filter: blur(1px);
+    filter: blur(4px);
 }
 
 .project figure {
